@@ -1,0 +1,138 @@
+<!DOCTYPE html>   
+<!-- SIGN UP -->
+
+<html>
+	<head>
+		<title> WEBSITE!!!!!! </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/prototype.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	</head>
+			
+
+	<body>
+		<!--script>
+			function validateForm(){
+				const username = document.getElementById("InputUser").value;
+				const email = document.getElementById("InputEmail").value;
+				const password = document.getElementById("InputPassword").value;
+				const passwordR = document.getElementById("InputPasswordR").value;
+
+				const username_error = document.getElementById("UserError").value;
+				const email_error = document.getElementById("EmailError").value;
+				const password_error = document.getElementById("PassError").value;
+				const passwordR_error = document.getElementById("PassRError").value;
+				
+				username_error.textContent="";
+				email_error.textContent="";
+				password_error.textContent="";
+				passwordR_error.textContent="";
+				
+				let isValid=true;
+				
+				if (username === "") {
+				username_error.textContent ="Please enter username";
+				isValid = false;
+				}
+				
+				if (email === "" || !email.includes("@")) {
+				email_error.textContent ="Please enter a valid email address";
+				isValid = false;
+				}
+				
+				if (password === "") {
+				password_error.textContent ="Please set a password ";
+				isValid = false;
+				}
+				
+				if (passwordR === "" || !passwordR===password) {
+				passwordR_error.textContent ="Passwords do not match";
+				isValid = false;
+				}
+
+				return isValid;
+
+
+			}
+		</script-->
+		
+		
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./index.html">TableTopInManchester</a>
+			</div>
+			<div class="navbar-buttons">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					<span class="glyphicon glyphicon-align-justify"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+						<li><a class="dropdown-item" href="#">Stores</a></li>
+						<li><a class="dropdown-item" href="#">Events</a></li>
+						<li><a class="dropdown-item" href="#">Search</a></li>
+					</ul>
+				</li>
+			<!--	<li class="nav-item"><a href="#">stores</a></li>
+				<li class="nav-item"><a href="#">events</a></li>
+				<li class="nav-item"><a href="#">search</a></li> -->
+
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="loginButton">
+					<a href="login.html">
+					<span class="glyphicon glyphicon-user"></span>
+					</a>
+				</li>
+			</ul>
+			
+			</div>
+		</nav>
+		                                                  <!--   STANDARD FOR ALL WEB PAGES  -->
+		                                                  
+		                                                  
+		<div class="loginform mx-auto">
+			<form name="SignUpForm" onsubmit="return validateSignUpForm()" action="dashboard.html">
+				<div class="mb-4">
+					<label for="InputUser" class="form-label">Username</label>
+					<input type="text" class="form-control" id="InputUser" >
+					<span id="UserError" class="error-message"></span>
+				</div>
+				<div class="mb-4">
+					<label for="InputEmail" class="form-label">Email address</label>
+					<input type="text" class="form-control" id="InputEmail" >
+					<span id="EmailError" class="error-message"></span>
+				</div>
+				<div class="mb-4">
+					<label for="InputPassword" class="form-label">Password</label>
+					<input type="password" class="form-control" id="InputPassword">
+					<span id="PassError" class="error-message"></span>
+				</div>
+				<div class="mb-4">
+					<label for="InputPasswordR" class="form-label">Repeat Password</label>
+					<input type="password" class="form-control" id="InputPasswordR">
+					<span id="PassRError" class="error-message"></span>
+				</div>
+				<div class="text-center">
+					<p> By registering with us you are agreeing to our <a href="#">Terms of Service</a></p>
+					<input type="submit" value="Sign Up" class="btn btn-primary btn-block mb-4"></input>
+				</div>
+				<div class="text-center">
+					<p> Already have an account? <a href="login.html">Login Here!</a></p>
+				</div>
+				
+			</form>
+		</div>
+		
+
+
+
+
+	<script src="../scripts/myScript.js"></script>
+	</body>
+	
+</html>

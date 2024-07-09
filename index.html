@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- INDEX -->
+
+<html>
+	<head>
+		<title> WEBSITE!!!!!! </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, inital-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/prototype.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	</head>
+			
+
+	<body onload = "startTimer()">
+		
+		<nav class="navbar navbar-inverse">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">TableTopInManchester</a>
+			</div>
+			<div class="navbar-buttons">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<span class="glyphicon glyphicon-align-justify"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+							<li><a class="dropdown-item" href="#">Stores</a></li>
+							<li><a class="dropdown-item" href="#">Events</a></li>
+							<li><a class="dropdown-item" href="#">Search</a></li>
+						</ul>
+					</li>
+				<!--	<li class="nav-item"><a href="#">stores</a></li>
+					<li class="nav-item"><a href="#">events</a></li>
+					<li class="nav-item"><a href="#">search</a></li> -->
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="loginButton">
+						<a href="login.html">
+						<span class="glyphicon glyphicon-user"></span>
+						</a>
+					</li>
+				</ul>
+			
+			</div>
+		</nav>
+		
+		<div class="container-fluid" id="IndexContainer">
+			<div class="row" id="IndexRow">
+				<div class="col-md-6" id="div1">
+					<div class="slideshow-container">
+						<div class="ImageText">
+							
+						</div>
+						<div class="ImageScroll">
+							<div class="scrollImage fade">
+								<img src="../images/boardPiece.jpg" alt="Image with board game pieces" style="width:740px; height:900px; object-fit:cover;">
+							</div>
+							<div class="scrollImage fade">
+								<img src="../images/gameStack.jpg" alt="Image with a board game stack" style="width:740px; height:900px; object-fit:cover;">
+							</div>
+							<div class="scrollImage fade">
+								<img src="../images/Players.jpg" alt="Image showing 4 players with a game" style="width:740px; height:900px; object-fit:cover;">
+							</div>
+							<div class="scrollImage fade">
+								<img src="../images/tabledeco.jpg" alt="Image with model peices on a table" style="width:740px; height:900px; object-fit:cover;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6" id="div2">
+					<div id="div2-1">
+						<div class="google-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1184.3880783115842!2d-2.426304834004962!3d53.579611447403835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487ba6542d41e541%3A0xb7d4443820b6b02b!2sSLICE%26DICE%20Board%20game%20shop!5e0!3m2!1sen!2suk!4v1715533452762!5m2!1sen!2suk" width="740" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+					<div id="div2-2">
+						<p>Whether youre a veteran or a complete beginner, the world of tabletop is for everyone.<br>
+						Don't be afraid to experiment with different games and events. The variety offered by this medium is infinite.<br>
+						See what this city has in store for you!</p>
+					</div>
+					<div id="div2-3">
+						<img src="../images/help_google.png" alt="the illusion of help">	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+	<script src="../scripts/imageScript.js"></script>
+	</body>
+
+</html>
+
+

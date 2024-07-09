@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&display=swap');
+
+
+.fjalla-one-regular {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*IMPORTS####################################################################################################################################*/
+
+
+.navbar.navbar-inverse .navbar-header .navbar-brand {
+        display: block;
+        text-align:center;
+        float: none;
+        vertical-align: top;
+        padding-top: 50px;
+        font-family: "Fjalla One", sans-serif;
+        font-size: 50px;
+        color: black;
+}
+
+.navbar.navbar-inverse .navbar-header .navbar-brand:hover {
+	color: white;
+	text-shadow: 0 0 10px #6c022c;
+}
+.navbar.navbar-inverse .navbar-header{
+  float: none; 
+}
+
+.glyphicon{
+	color: black;
+	font-size: 20px;
+}
+
+.glyphicon:hover{
+	color: white;
+	font-size: 20px;
+}
+/*.dropdown{
+	position: sticky;
+	left: 0;
+	padding: 5px;
+}*/
+
+body {
+  	background-position:center;
+ 	 background-image:url(../images/backgroundFull.png);
+ 	 background-attachment: fixed;
+ 	 font-family: "Dosis", sans-serif;
+}
+
+.navbar.navbar-inverse {
+	background-color:transparent;
+	border: transparent;
+}
+
+.pagename{
+	margin-bottom:20px;
+	background-position:center;
+  	background-image:url(../images/dashboardBG.png);
+  	background-attachment: fixed;
+  	
+}
+
+.pagename h1{
+	padding-top:10px;
+	padding-left:20px;
+	color:white;
+}
+
+
+.loginButton{
+	position: sticky;
+	right: 10px;
+	padding: 5px;
+
+}
+
+ .navbar.navbar-inverse .navbar-buttons a {
+	padding-bottom: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 16px;
+}
+
+
+/*#######################################################################################################################################*/
+
+.loginform{
+	padding-left: 35%;
+	padding-right: 35%;
+	padding-top: 5%;
+	font-size: 16px;
+	
+	&.mb-4{
+		padding-top:
+	}
+}
+
+.loginform p{
+	font-size: 14px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.container-md{
+	max-width:1000px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: inherit; 
+}
+
+/*dashboard ##############################################################################################################################*/
+
+.container{
+	margin: 5px;
+}
+
+$min-width: 320px;
+
+
+* {
+  box-sizing: content-box;
+}
+
+*:before {
+  box-sizing: content-box;
+}
+
+*:after {
+  box-sizing: content-box;
+}
+
+
+
+.container-calendar{
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+}
+
+}
+
+.row:before{
+	display: table;
+	content: " ";
+}
+	
+.grid-calendar{
+	text-align:center;
+	
+	.row{
+		margin: 0;
+	}
+	
+	.calendar-week .grid-cell{
+		border: 1px solid white;
+	}
+
+	.calendar-weekday .grid-cell > div > div {
+	    padding-bottom: 10px;
+	    height: auto;
+	  }
+	  
+	  
+	  
+	 .grid-cell {
+		display: inline-block;
+		float: left;
+		min-height: 1px;
+		padding: 0;
+		position: relative;
+
+	    &.prev{
+		background-color: #f3e4d7;
+	    }
+	    
+	    &.next {
+		background-color: #f3e4d7;
+	    }
+	    
+	    &.curr{
+	    	background-color: #ffd0a7
+	    }
+	    
+	    &.curr.int{
+	    	background-color: #f4785a;
+	    	
+	    }
+	    &.curr.int:hover{
+	    	background-color: #fc8f88;
+	    	
+	    }
+	    
+	    
+	    > div{
+	    	display:flex;
+	    	justify-content: center;
+	    	width: 100%;
+	    
+	    	> div{
+	    		height: 0;
+	    		padding: 50% 0;
+	    	
+	    	}
+	    
+	    
+
+	    }
+	 } 
+ 
+}
+
+textarea{
+	resize:none;
+	}
+
+#rowHeight{
+	height: 210px;
+	
+	.row {
+		border: 1px solid black;
+		font-size: 10px;
+		
+	}
+	
+	.row p{
+		margin-bottom:0;
+		
+	}
+	
+	#RSVPcol{
+		text-align: center;
+		
+		.button{
+			width:150px;
+		}
+	}
+	
+	#ManageEventView{
+		margin: 0;
+		padding-top: 75px;
+		text-decoration: none;
+		
+	}
+	
+	
+	
+}
+
+.btn{
+	font-weight: bold;
+}
+
+#ManageEventViewButton:hover{
+	background-color: #fc8f88;
+	color: white;
+}
+#newEventButton:hover{
+	background-color: #f57870;
+	color: white;
+}
+
+.registerEventForm{
+	padding-top: 5%;
+	font-size: 16px;
+
+}
+
+#IndexContainer{
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:10%;
+	padding-right:10%;
+}
+
+#div2-1{
+	min-height: 500px;
+	
+	.google-map {
+		padding-bottom: 70%;
+		position: relative;
+				}
+
+	.google-map iframe {
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		}
+}
+#div2-2{
+	min-height:300px;
+	max-height: 500px;
+	font-size:20px;
+}
+
+#div2-2 p{
+	padding-top:75px;
+	padding-bottom:75px;
+	text-align: justify;
+	background-color: white;
+}
+
+#div2-3{
+	max-height:50px;
+}
+#div2-3 img{
+	position: absolute;
+	padding-left:85%;
+}
+
+
+#div1{
+	min-height:900px;
+}
+
+#IndexRow{
+	min-height:1000px;
+}
+
+/* Imagescroll */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.imageScroll {display: none;}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+  transition: opacity 0.3s;
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+.panel-body{
+	 box-shadow: 10px 10px 5px #6f1941;
+}
+
+.nav-tabs{
+	background-color:#9e1554;
+	
+}
+
+.panel-heading{
+	background-color:#9e1554;
+}
+
+
+.nav-tabs a{
+	color:white;	
+}
+
+.nav-tabs a:hover{
+	
+	color: black;
+	.nav-tabs{
+		background-color:black;
+	
+	}
+	
+}
+
+
+
+
